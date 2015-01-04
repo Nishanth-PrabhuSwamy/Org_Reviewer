@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>About Yelp</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+		<style>
+			body 		{ padding: 25px 50px 50px 50px; }
+		</style>
+</head>
+<body>
+	<p>
+	Please write your reviews below !
+	</p>
+
+	<form action="/updateOrgReview" method="post">
+    <!-- This panel is for updating reviews -->
+    
+    <div class="panel panel-primary">
+      <!-- Default panel contents -->
+        <div class="panel-heading">Update</div>
+        <div class="panel-body">
+
+				
+				<br/><div class="form-group  usernameDiv">
+		                  <label class="text" class="col-sm-2 control-label pull-left"> Type:</label>
+		                	  <select id="type" name="type" require="true">
+  								<option value="Restaurants">Restaurants</option>
+  							  	<option value="Shopping">Shopping</option>
+    							<option value="Nightlife">Nightlife</option>
+    							<option value="Japanese">Japanese</option>
+    							<option value="Chinese">Chinese</option>
+    							<option value="Bars">Bars</option>   
+    							<option value="Health & Medical">Health & Medical</option>    					
+  							</select>
+		               </div>
+				<br/><div class="form-group  usernameDiv">
+		                  <label class="text" class="col-sm-2 control-label pull-left">Organization Name</label>
+		                  <div class="col-sm-10">
+		                      <input type="text" class="form-control" name="orgName" id="orgNames" placeholder="Organization name" required="true" size="35">
+		                  </div>
+		        </div>
+		               
+				<br/><div class="form-group  usernameDiv">
+		                  <label class="text" class="col-sm-2 control-label pull-left">Description</label>
+		                  <div class="col-sm-10">
+		                      <input type="text" class="form-control" name="description" id="description" placeholder="Your description" required="true" 						size="35">
+		                  </div>
+		         </div>
+
+
+				<br/><div class="form-group  usernameDiv">
+		                  <label class="text" class="col-sm-2 control-label pull-left"> Ratings:</label>
+		                	  <select id="value1" name="value1" require="true">
+  							<option value="1">1</option>
+  							<option value="2">2</option>
+    							<option value="3">3</option>
+    							<option value="4">4</option>
+    							<option value="5">5</option>				
+  							</select>
+
+
+				<br/><div class="form-group  usernameDiv">
+		                  <label class="text" class="col-sm-2 control-label pull-left"> Price Ratings:</label>
+		                	  <select id="price" name="price" require="true">
+  							<option value="1">1</option>
+  							<option value="2">2</option>
+    							<option value="3">3</option>
+    							<option value="4">4</option>
+    							<option value="5">5</option>				
+  							</select>
+
+
+              
+        </div>
+	</div>
+ 	</form>	
+	  
+                <br/><div class="form-group ">
+                    <div class="pull-left signIn">
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                  </div>
+
+	<ul>
+		<br/><br/><li><a href="/main"><b> Return to main page</b></a></li>
+	</ul>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Search through location</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+		<style>
+			body 		{ padding: 25px 50px 50px 50px; }
+		</style>
+
+</head>
+<body>
+	<p>
+	Please enter a city<br/> 
+	Or click on a city
+	</p>
+
+	<form action="/searchLocation" method="post">
+	    <!-- This panel is for searching through cities -->
+    
+    	<div class="panel panel-primary">
+      	<!-- Default panel contents -->
+        <div class="panel-heading">Search</div>
+        <div class="panel-body">
+
+				<br/><div class="form-group  usernameDiv">
+		                  <label class="text" class="col-sm-2 control-label pull-left"> Type:</label>
+		                	  <select id="location" name="location" value" " require="true">
+  							<option value="San Jose">San Jose</option>
+  							 <option value="Amsterdam">Amsterdam</option>
+    							<option value="Atlanta">Atlanta</option>
+    							<option value="Austin">Austin</option>
+    							<option value="Bengaluru">Bengaluru</option>
+    							<option value="Boston">Boston</option>   
+    							<option value="Berlin">Berlin</option>   
+    							<option value="Chicago">Chicago</option>   
+    							<option value="Denver">Denver</option>   
+    							<option value="Dublin">Dublin</option>   
+    							<option value="Houston">Houston</option>
+    							<option value="Las Vegas">Las Vegas</option>      
+    							<option value="New York">New York</option>   
+    							<option value="San Francisco">San Francisco</option>   
+    							<option value="Paris">Paris</option>   
+    							<option value="Toronto">Toronto</option>   
+    							<option value="Washington DC">Washington DC</option>    					
+  							</select>
+        </div>
+	</div>
+ 	</form>	
+
+	 <br/><div class="form-group ">
+	                    <div class="pull-left signIn">
+	                      <button type="submit" class="btn btn-primary">Submit</button>
+	                    </div>
+	                  </div>
+
+	<ul>
+		<br/><br/><li><a href="/main"><b> Return to main page</b></a></li>
+	</ul>
+
+</body>
+</html>

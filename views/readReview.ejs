@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Search through a price</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+		<style>
+			body 		{ padding: 25px 50px 50px 50px; }
+		</style>
+</head>
+<body>
+	<p>
+	Please select a through rating !<br/> 
+	5 represents the costliest.
+	</p>
+
+	<form action="/searchRating" method="post">
+    <!-- This panel is for searching through ratings -->
+    
+    <div class="panel panel-primary">
+      <!-- Default panel contents -->
+        <div class="panel-heading">Search</div>
+        <div class="panel-body">
+
+		               <div class="form-group  usernameDiv">
+		                  <label class="text" class="col-sm-2 control-label pull-left">Enter the price rating: </label>
+		                  <div class="col-sm-10">
+		                      <input type="text" class="form-control" name="rating" id="rating" placeholder="Price Rating" size="35">
+		                  </div>
+		               </div>
+
+
+	                  <br/><div class="form-group ">
+	                    <div class="pull-left signIn">
+	                      <button type="submit" class="btn btn-primary">Submit</button>
+	                    </div>
+	                  </div>
+				
+        </div>
+	</div>
+ 	</form>	
+
+	<ul>
+		<br/><br/><li><a href="/main"><b> Return to main page</b></a></li>
+	</ul>
+
+</body>
+</html>

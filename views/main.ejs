@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>  Write Review </title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+		<style>
+		body 		{ padding: 25px 50px 50px 50px; }
+		</style>
+	<style>
+	ul
+	{
+		list-style:none;
+		margin: 10 10 10 10;
+	}
+	</style>
+</head>
+<body>
+
+             <div class="form-group ">
+	     <div class="pull-right signIn">
+			<p> Last log in time:
+	            <button  class="btn btn-primary" value="" id="time"> <%=message%></button>
+	      </div>
+	      </div>
+
+		<br/><br/><div class="form-group ">
+	     <div class="pull-right signIn">
+			<p> <a href="/logout">Log out !</p>
+	      </div>
+	      </div>
+	<p>
+	This is the <b>home</b> page <br/>
+	Please navigate by clicking on the links below
+	</p>
+	<ul>
+		<li><a href="/review"><b>Write a review</b></a> </li>
+		<li><a href="/readReview"><b>Reviews based on ratings</b></a></li>
+		<li><a href="/viewReview"><b>View your reviews</b></a></li>
+		<li><a href="/searchBasedLocation"><b>Search based on location</b></a></li>
+		<li><a href="/searchBasedType"><b>Search based on type </b></a></li>
+		<li><a href="/updateReview"><b>Update your previous review</b></a></li>
+		<li><a href="/deleteReview"><b>Delete previous review comments</b></a></li>
+	</ul>
+	
+</body>
+</html>

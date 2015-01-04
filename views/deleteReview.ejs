@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+	<title>Delete review</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+	<style>
+		body 
+		{
+		 padding-top:80px;
+		 font-size: 200%;
+		 }
+	</style>
+</head>
+<body>
+ 
+	<form action="/delete" method="post">
+    <!-- This panel is for deleting the previous ratings -->
+    
+    <div class="panel panel-primary">
+      <!-- Default panel contents -->
+        <div class="panel-heading">Click the "delete" button to delete the contents of your review</div>
+        <div class="panel-body">
+
+				
+	                  <br/><div class="form-group ">
+	                    <div class="pull-left signIn">
+	                      <button type="submit" class="btn btn-primary">Delete</button>
+	                    </div>
+	                  </div>
+        </div>
+	</div>
+ 	</form>	
+	<ul>
+		<br/><br/><li><a href="/main"><b> Return to main page</b></a></li>
+	</ul>
+</body>
+</html>
