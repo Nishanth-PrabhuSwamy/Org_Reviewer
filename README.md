@@ -1,7 +1,8 @@
 
 
-# Yelp
-
+# Org reviewer
+An online application, that allows users to view and provide feedback about the various businesses such as 
+Restaurants, nightlife, etc.
 
 
 ## Usage
